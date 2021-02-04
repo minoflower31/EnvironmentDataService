@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/camera_choose_cam_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="25dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/camera_img_camera"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/icon_camera"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/camera_img_camera"
+            android:layout_marginTop="15dp"
+            android:text="카메라로 찍어서 올리기"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#494949"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/camera_choose_photo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_below="@id/camera_choose_cam_layout">
+
+        <ImageView
+            android:id="@+id/camera_img_photo"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/icon_photos"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="앨범에서 선택하여 올리기"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#494949"
+            android:layout_toRightOf="@id/camera_img_photo"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/camera_cancel_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="취소"
+        android:padding="5dp"
+        android:layout_below="@id/camera_choose_photo_layout"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

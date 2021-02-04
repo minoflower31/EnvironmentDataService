@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navi_home_btn"
+        android:icon="@drawable/ic_home_navigation"
+        android:title=""/>
+
+    <item
+        android:id="@+id/navi_chart_btn"
+        android:icon="@drawable/ic_insert_chart_navigation"
+        android:title="" />
+
+    <item
+        android:id="@+id/navi_upload_btn"
+        android:icon="@drawable/ic_add_circle_navigation"
+
+        android:title="" />
+
+    <item
+        android:id="@+id/navi_community_btn"
+        android:icon="@drawable/ic_group_navigation"
+        android:title="" />
+    <item
+        android:id="@+id/navi_setting_btn"
+        android:icon="@drawable/ic_settings_navigation"
+        android:title="" />
+</menu>

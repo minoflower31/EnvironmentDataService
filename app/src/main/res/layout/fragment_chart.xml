@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFCFC">
+
+    <ImageView
+        android:id="@+id/chart_locate_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_location_on_black_24dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"/>
+    <TextView
+        android:id="@+id/chart_locate_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="위치"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@id/chart_locate_img"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/chart_locate_detail_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="클릭하여 설정하기"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/chart_locate_tv"/>
+
+    <Spinner
+        android:id="@+id/chart_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chart_locate_detail_tv"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:textAlignment="inherit"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_below="@id/chart_spinner"
+        android:background="#ffffff"
+        android:id="@+id/chart_line"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

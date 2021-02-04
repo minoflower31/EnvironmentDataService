@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFCFC"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/add_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:background="#FCFCFC"
+            android:src="@drawable/icon_arrow_left" />
+
+        <RelativeLayout
+            android:id="@+id/add_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_back_btn"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/add_locate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="위치"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/add_locate_detail_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toEndOf="@+id/add_locate_tv"
+                android:layout_toRightOf="@+id/add_locate_tv"
+                android:hint="@string/click_setting"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/add_layout_4"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/add_layout_1"
+            android:layout_margin="20dp"
+            android:background="#DFDFDF">
+
+            <ImageView
+                android:id="@+id/add_photo_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/add_photo_plus_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_plus_white" />
+
+            <TextView
+                android:id="@+id/add_photo_plus_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_photo_plus_img"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:text="사진 추가" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/add_help_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_layout_4"
+            android:src="@drawable/icon_help"
+            android:background="#fcfcfc"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:padding="5dp"/>
+
+        <RelativeLayout
+            android:id="@+id/add_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_help_btn"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/add_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="날짜"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:layout_marginStart="20dp" />
+
+            <TextView
+                android:id="@+id/add_date_detail_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/add_date_tv"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/add_layout_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_layout_2"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/add_time_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:id="@+id/add_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/add_time_img"
+                android:text="시간"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/add_time_detail_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/add_time_tv"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/add_description_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_layout_3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="설명"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/add_tag_check_box1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_layout_3"
+            android:layout_toLeftOf="@id/add_tag_check_box2"
+            android:layout_toRightOf="@id/add_description_tv"
+            android:text="대기"
+            android:layout_marginLeft="15dp"
+            android:layout_toStartOf="@id/add_tag_check_box2"
+            android:layout_toEndOf="@id/add_description_tv"/>
+
+        <CheckBox
+            android:id="@+id/add_tag_check_box2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_layout_3"
+            android:layout_toLeftOf="@id/add_tag_check_box3"
+            android:textSize="14sp"
+            android:text="수질" />
+
+        <CheckBox
+            android:id="@+id/add_tag_check_box3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_layout_3"
+            android:layout_toLeftOf="@id/add_tag_check_box4"
+            android:text="토양" />
+
+        <CheckBox
+            android:id="@+id/add_tag_check_box4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_layout_3"
+            android:layout_toLeftOf="@id/add_tag_check_box5"
+            android:text="도로/건물" />
+
+        <CheckBox
+            android:id="@+id/add_tag_check_box5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_layout_3"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:text="기타" />
+
+        <EditText
+            android:id="@+id/add_description_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_description_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_text_box"
+            android:inputType="textMultiLine"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/add_temp_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_description_et"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:text="온도"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/add_temp_detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_description_et"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/add_temp_tv"
+            android:hint="@string/blank"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/add_temp_unit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_description_et"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/add_temp_detail_tv"
+            android:text="@string/temp"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/add_humid_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_temp_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="습도"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/add_humid_detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_temp_detail_tv"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/add_humid_tv"
+            android:hint="@string/blank"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/add_humid_unit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_temp_unit_tv"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/add_humid_detail_tv"
+            android:text="@string/humid"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/add_dust_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_humid_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="미세먼지 농도"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/add_dust_detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_humid_tv"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/add_dust_tv"
+            android:hint="@string/blank"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/add_dust_unit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_humid_unit_tv"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/add_dust_detail_tv"
+            android:text="@string/dust"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/add_o3_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_dust_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="오존 농도"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/add_o3_detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_dust_detail_tv"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:paddingRight="3dp"
+            android:layout_toRightOf="@id/add_o3_tv"
+            android:hint="@string/blank"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/add_o3_unit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_dust_unit_tv"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/add_o3_detail_tv"
+            android:text="ppm"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/add_upload_btn"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_o3_unit_tv"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/login_btn_shape"
+            android:text="업로드"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</ScrollView>

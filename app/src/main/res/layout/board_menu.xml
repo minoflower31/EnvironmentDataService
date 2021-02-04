@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/board_drawer"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="right">
+
+    <RelativeLayout
+        android:id="@+id/board_menu_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#00A57C">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="게시판 선택"
+            android:textSize="24sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/board_menu_middle_view"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#8C8C8C"
+        android:layout_below="@id/board_menu_top_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/board_menu_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/board_menu_middle_view"
+        android:background="#FAFAFA">
+        <TextView
+            android:id="@+id/board_menu_free_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="자유게시판"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/borad_menu_info_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="정보게시판"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_below="@id/board_menu_free_tv"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

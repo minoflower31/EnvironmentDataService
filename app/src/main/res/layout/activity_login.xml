@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/sign_in_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:text="로그인"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeStepGranularity="2sp"
+        android:textStyle="bold"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/sign_in_alert_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEST"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#D50000"
+        android:layout_below="@id/sign_in_tv"
+        android:layout_marginStart="30dp" />
+    <TextView
+        android:id="@+id/sign_up_email_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_in_tv"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:text="이메일"
+        android:textColor="#7F1D2226"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:id="@+id/sign_in_auto_login_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자동 로그인"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/sign_in_tv"/>
+
+    <EditText
+        android:id="@+id/sign_up_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_up_email_tv"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:autofillHints=""
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/sign_up_pw_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up_id"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="비밀번호"
+        android:textColor="#7F1D2226"
+        android:textSize="14sp"
+        android:layout_marginStart="30dp" />
+
+    <EditText
+        android:id="@+id/sign_up_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_up_pw_tv"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/sign_up_complete_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/sign_up_pw"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/login_btn_shape"
+        android:text="계속"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/sign_in_no_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="계정을 가지고 있지 않습니까?  "
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/sign_in_sign_up_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textColor="#00C569"
+            android:layout_toRightOf="@+id/sign_in_no_account"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

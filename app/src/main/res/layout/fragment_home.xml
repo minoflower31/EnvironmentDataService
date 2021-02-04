@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFCFC">
+
+    <RelativeLayout
+        android:id="@+id/add_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/home_img_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location_on_black_24dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/home_locate_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="위치"
+            android:textColor="#000000"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@id/home_img_1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/home_locate_detail_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_toEndOf="@+id/home_locate_tv"
+            android:layout_toRightOf="@+id/home_locate_tv"
+            android:hint="설정하기"
+            android:onClick="startAutocompleteActivity"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/home_img_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_date_range_black_24dp"
+            android:layout_below="@id/home_img_1"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/home_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="날짜"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/home_img_2"
+            android:layout_below="@id/home_locate_tv"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/home_date_detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/home_date_tv"
+            android:layout_below="@id/home_locate_detail_tv"
+            android:hint="설정하기"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/home_img_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_access_time_24dp"
+            android:layout_below="@id/home_img_2"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/home_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_date_tv"
+            android:layout_toRightOf="@id/home_img_3"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="15dp"
+            android:text="시간(시)"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/home_time_detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/home_time_tv"
+            android:layout_below="@id/home_date_detail_tv"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="21dp"
+            android:hint="설정하기"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/home_search_btn"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="검색"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:background="@drawable/login_btn_shape"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="60dp"
+            android:layout_below="@id/home_date_detail_tv"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/home_item_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시간"
+        android:layout_below="@id/add_layout_2"
+        android:layout_marginLeft="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_layout_2"
+        android:layout_toRightOf="@id/home_item_tv"
+        android:layout_marginLeft="80dp"
+        android:text="태그"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_layout_2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="작성자"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/add_layout_2"
+        android:layout_marginTop="25dp"/>
+
+</RelativeLayout>
